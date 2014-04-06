@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Avicalc/Avicalc.iml" filepath="$PROJECT_DIR$/Avicalc/Avicalc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.avicalc.app.iml" filepath="$PROJECT_DIR$/com.avicalc.app.iml" />
+    </modules>
+  </component>
+</project>
+
