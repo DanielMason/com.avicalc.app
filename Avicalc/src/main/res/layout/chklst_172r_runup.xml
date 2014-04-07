@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/c172r_runup_title"
+            android:id="@+id/title_c172r_vspeeds"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/c172r_vspeed_details"
+            android:id="@+id/c172r_runup_details"
+            android:layout_below="@+id/title_c172r_vspeeds"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/c172r_runup_details_checked"
+            android:id="@+id/c172r_vspeed_details_checked"
+            android:layout_alignTop="@+id/c172r_vspeed_details"
+            android:layout_toRightOf="@+id/c172r_vspeed_details"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_marginRight="15dp"
+            android:lineSpacingExtra="15dp" />
+
+    </RelativeLayout>
+</ScrollView>

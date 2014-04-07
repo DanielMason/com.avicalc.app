@@ -1,38 +1,32 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/fuelcalc"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".MainActivity"
-    tools:ignore="MergeRootFrame">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Fuel Conversion"
-        android:id="@+id/textFuelConversion"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp" />
+    android:focusable="false">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Convert"
+        android:text="Convert from:"
         android:id="@+id/textView2"
-        android:layout_below="@+id/textFuelConversion"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="15dp" />
 
     <Spinner
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spinnerFrom"
         android:layout_below="@+id/textView2"
+        android:singleLine="true"
         android:layout_alignParentLeft="true"
-        android:entries="@array/conversion_array" />
+        android:entries="@array/conversion_array"
+        android:layout_toLeftOf="@+id/textView3"
+        android:textAlignment="center"
+        android:longClickable="false" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -40,35 +34,37 @@
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/textInput1"
+        android:textColor="@color/text"
         android:layout_alignBottom="@+id/spinnerFrom"
-        android:layout_toRightOf="@+id/spinnerFrom"
-        android:hint="1" />
+        android:hint="1"
+        android:layout_toRightOf="@+id/textView3" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="to"
+        android:text="to:"
         android:id="@+id/textView3"
         android:layout_below="@+id/textInput1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
 
     <Spinner
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spinnerTo"
-        android:layout_below="@+id/textView3"
+        android:singleLine="true"
         android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
         android:entries="@array/conversion_array"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/textView3" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textOutput1"
         android:layout_alignBottom="@+id/spinnerTo"
-        android:layout_toRightOf="@+id/spinnerTo"
         android:layout_alignRight="@+id/textInput1"
         android:layout_alignTop="@+id/spinnerTo"
         android:editable="false"
@@ -77,16 +73,78 @@
         android:maxLines="1"
         android:textSize="20dp"
         android:textStyle="normal"
-        android:paddingLeft="10dp" />
+        android:paddingLeft="10dp"
+        android:singleLine="false"
+        android:layout_toRightOf="@+id/textView3" />
 
-    <Button
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/sgTitle"
+        android:layout_marginTop="10dp"
+        android:text="Specific Gravity:"
+        android:layout_width = "wrap_content"
         android:layout_height="wrap_content"
-        android:text="Convert"
-        android:id="@+id/buttonConvert"
         android:layout_below="@+id/spinnerTo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:onClick="convertNow" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:ems="10"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/text"
+        android:layout_below="@+id/textOutput1"
+        android:layout_alignLeft="@+id/textOutput1"
+        android:layout_alignStart="@+id/textOutput1"
+        android:hint="0.72" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specific Gravity:"
+        android:id="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp"
+        android:textSize="16dp"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_alignBottom="@+id/editText4"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight (Kg):"
+        android:id="@+id/textView1"
+        android:textSize="16dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ems="10"
+        android:textSize="20dp"
+        android:layout_marginLeft="12dp"
+        android:textStyle="normal"
+        android:textColor="@color/text"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
+
 
 </RelativeLayout>

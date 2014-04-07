@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.avicalc.app"
-    android:versionCode="1"
-    android:versionName="0.1" >
+    android:versionCode="12"
+    android:versionName="0.5.8" >
 
     <uses-sdk
-        android:minSdkVersion="7"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:debuggable="false"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.avicalc.app.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,14 +24,63 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name="com.avicalc.app.FuelCalc"
+            android:name=".FuelCalc"
             android:label="@string/title_fuel_calc"
-            android:parentActivityName="com.avicalc.app.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.avicalc.app.MainActivity" />
         </activity>
-    </application>
 
+        <activity
+            android:name=".Checklists"
+            android:label="@string/title_checklists"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.avicalc.app.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".WeightandBalance"
+            android:label="@string/title_weight_and_balance"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.avicalc.app.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Metar"
+            android:label="@string/title_metar"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.avicalc.app.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Navcalc"
+            android:label="@string/title_navcalc"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.avicalc.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Flightplanning"
+            android:label="@string/title_flightplanning"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.avicalc.app.MainActivity" />
+        </activity>
+
+    </application>
 </manifest>

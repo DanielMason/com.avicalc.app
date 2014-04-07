@@ -2,15 +2,11 @@ package com.avicalc.app;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -44,4 +40,27 @@ public class MainActivity extends ActionBarActivity {
         Intent intent = new Intent(this, FuelCalc.class);
         startActivity(intent);
     }
+    public void loadChecklists(View view) {
+        Intent intent = new Intent(this, Checklists.class);
+        startActivity(intent);
+    }
+    public void loadWeightandBalance(View view) {
+        Intent intent = new Intent(this, WeightandBalance.class);
+        startActivity(intent);
+    }
+    public void loadMetar(View view) {
+        Intent intent = new Intent(this, Metar.class);
+        startActivity(intent);
+    }
+    public void loadNavcalc(View view) {
+        Intent intent = new Intent(this, Navcalc.class);
+        startActivity(intent);
+    }
+    public void loadFlightplanning(View view) {
+        Intent intent = new Intent(this, Flightplanning.class);
+        startActivity(intent);
+    }
 }
+
+
+

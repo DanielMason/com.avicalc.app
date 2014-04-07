@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Avicalc/Avicalc.iml" filepath="$PROJECT_DIR$/Avicalc/Avicalc.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.avicalc.app.iml" filepath="$PROJECT_DIR$/com.avicalc.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.avicalc.mobile.iml" filepath="$PROJECT_DIR$/com.avicalc.mobile.iml" />
     </modules>
   </component>
 </project>

@@ -2,8 +2,329 @@
 <resources>
 
     <string name="app_name">AviCalc</string>
-    <string name="title_fuel_calc">Fuel Calculations</string>
     <string name="action_settings">Settings</string>
+
+    <string name="title_fuel_calc">Fuel Calculations</string>
+    <string name="title_checklists">Checklists</string>
+    <string name="title_weight_and_balance">Weight and Balance</string>
+    <string name="title_metar">Metar</string>
+    <string name="title_flightplanning">Flight Planning</string>
+    <string name="title_navcalc">Navigation Calc</string>
+
+    <string name="metar_title"><u>Metar</u></string>
+
+    <string name="c172r_checklist_title">Cessna 172R</string>
+    <string name="c172r_checklist_subtitle">Checklists and Briefings</string>
+    <string name="c172r_checklist_prestart"><u>Cessna 172R Pre-Start Checklist</u></string>
+    <string name="c172r_checklist_preflight"><u>Cessna 172R Pre-Flight Checklist</u></string>
+    <string name="c172r_checklist_enginestart"><u>Cessna 172R Engine Start</u></string>
+    <string name="c172r_runup_title"><u>Cessna172R Run-Up Checklist</u></string>
+    <string name="c172r_checklist_enginestart_cold"><u>Cold Start</u></string>
+    <string name="c172r_checklist_enginestart_hot"><u>Hot Start</u></string>
+    <string name="c172r_checklist_enginestart_flooded"><u>Flooded Start</u></string>
+    <string name="c172r_checklist_enginestart_running"><u>Engine Running (1000rpm)</u></string>
+
+    <string name="c172r_briefing_vspeeds"><u>Cessna 172R Vref</u></string>
+    <string name="c172r_briefing_vspeeds_engine"><u>Engine Limitations</u></string>
+    <string name="c172r_briefing_vspeeds_takeoff"><u>Take-off Speeds</u></string>
+    <string name="c172r_briefing_vspeeds_climb"><u>Climb Speeds</u></string>
+    <string name="c172r_briefing_vspeeds_landing"><u>Landing Speeds</u></string>
+
+    <string name="c172r_preflight_details_checked">
+        Flight Manual, Tech Log &amp;
+        Cert of Airworthiness Present\n
+        Park brake\n
+        Control wheel lock\n
+        Mags\n
+        Keys\n
+        Master switch\n
+        Flaps\n
+        Master switch\n
+        Secure door\n
+        Luggage Locker\n
+        Fuselage (left)\n
+        Left Tailplane\n
+        Left Elevator\n
+        Rudder\n
+        Nav light\n
+        VOR Aerial\n
+        Tie down ring\n
+        Look forward at tyres\n
+        Right elevator\n
+        Fuselage (right)\m
+        Marker beacon\n
+        Transponder Antenna\n
+        ELT &amp; VHF Aerials\n
+        Flaps\n
+        Right Aileron\n
+        Wingtip &amp; Nav light\n
+        Leading edge\n
+        Right spat &amp; wheel\n
+        Fuel drain points(5)\n
+        Air vents\n
+        Spinner\n
+        Air Intake\n
+        GPU flap\n
+        Static vent\n
+        Batt drain &amp; fuel pump\n
+        Pitot tube\n
+        Left wingtip-\n
+            aileron, flaps, fuel drains &amp; wheel\n
+    </string>
+    <string name="c172r_preflight_details">
+         \n
+        Present\n
+        Set\n
+        Removed\n
+        Off\n
+        Removed\n
+        On\n
+        Down\n
+        Off\n
+        Check\n
+        Secure\n
+        No cracks\n
+        No damage\n
+        Full &amp; Free\n
+        Moves &amp; No cracks\n
+        Check\n
+        Check\n
+        No damage\n
+        Inflated\n
+        Trim OK\n
+        No cracks\n
+        Check\n
+        Check\n
+        Check\n
+        Little Movement &amp; pushrod OK\n
+        Check &amp; Mass Balance OK\n
+        Check\n
+        Check\n
+        Check &amp; No damage\n
+        No water\n
+        Clear\n
+
+        </string>
+    <string name="c172r_prestart_details">
+         Aircraft\n
+        Pre-Flight inspection\n
+        Safety equipment\n
+        Seats\n
+        Harness\n
+        Hatches\n
+        Passenger Briefing\n
+        Brakes\n
+        Flight Instruments\n
+        Engine Instruments\n
+        Ignition\n
+        Master Switch\n
+        Avionics Master\n
+        Radios\n
+        Avionics Master\n
+        Beacon\n
+        Strobes\n
+        Carb Heat\n
+        Throttle\n
+        Mixture\n
+        Flaps\n
+        Air Vents\n
+        Trim\n
+        Fuel Shut-off Valve\n
+        Fuel\n
+        Circuit-breakers\n
+        Lookout
+    </string>
+
+    <string name="c172r_prestart_details_checked">
+         Suitable place to start\n
+        Complete\n
+        Checked\n
+        Locked and Secure\n
+        Secure\n
+        Close and Locked\n
+        Complete\n
+        Test and Parked\n
+        Checked\n
+        Checked\n
+        Both\n
+        On\n
+        On\n
+        Listen to AWIB and Set\n
+        Off\n
+        On\n
+        As Required\n
+        N/A\n
+        Full and Free, set 1/4inch\n
+        Rich\n
+        Up\n
+        Closed\n
+        Checked and Set\n
+        On(Push in)\n
+        Selector on both\n
+        Checked\n
+        Aircraft clear to start
+    </string>
+    <string name="c172r_runup_details">
+        test
+    </string>
+
+    <string name="c172r_runup_details_checked">
+        test
+    </string>
+
+    <string name="c172r_engstart_cold">
+         Throttle\n
+        Mixture\n
+        Aux. Fuel Pump\n
+        Propeller\n
+        Ignition\n
+        Idle\n
+    </string>
+    <string name="c172r_engstart_cold_checked">
+         Full, Free - Set half\n
+        Rich\n
+        On - Count 4 - Off\n
+        Clear\n
+        Start\n
+        1000rpm
+    </string>
+
+    <string name="c172r_engstart_hot">
+         Throttle\n
+        Mixture\n
+        Aux. Fuel Pump\n
+        Mixture\n
+        Propeller\n
+        Ignition\n
+        Mixture
+    </string>
+    <string name="c172r_engstart_hot_checked">
+         Full, Free - Set 1/4inch\n
+        Rich\n
+        On-Off\n
+        Idle Cut Off\n
+        Clear\n
+        Start\n
+        Advance to Rich
+    </string>
+
+    <string name="c172r_engstart_flooded">
+         Aux. Fuel Pump\n
+        Mixture\n
+        Throttle\n
+        Propeller\n
+        Ignition\n
+        Mixture\n
+        Throttle
+    </string>
+    <string name="c172r_engstart_flooded_checked">
+         Off\n
+        Idle Cut Off\n
+        Half Open\n
+        Clear\n
+        Start\n
+        Advance to Rich\n
+        Retard Promptly
+    </string>
+
+     <string name="c172r_engstart_running">
+         Oil Pressure\n
+            Suction\n
+            Ammeter\n
+            Ignition\n
+            Avionics Master
+    </string>
+    <string name="c172r_engstart_running_checked">
+         Increasing (30sec)\n
+        Registering\n
+        Charging\n
+        Left-Right-Off-Both\n
+        On
+    </string>
+
+
+     <string name="c172r_vspeed_details">
+         Vne\n
+         Vn\n
+         Vfe (10° flaps)\n
+         Vfe (20-30° flaps)\n
+         Max window-open speed\n
+         Vs (clean)\n
+         Vs (full flap)\n
+         Va (2450lbs)\n
+         Va (2100lbs)\n
+         Va (1600lbs)
+    </string>
+    <string name="c172r_vspeed_details_checked">
+        163 KIAS\n
+        129 KIAS\n
+        110 KIAS\n
+        85 KIAS\n
+        163 KIAS\n
+        44 KIAS\n
+        33 KIAS\n
+        99 KIAS\n
+        92 KIAS\n
+        82 KIAS
+    </string>
+
+     <string name="c172r_vspeed_engine_details">
+         Max RPM\n
+         Min RPM\n
+         Max continuous RPM\n
+         Rated Horsepower\n
+         Static RPM limitations
+    </string>
+    <string name="c172r_vspeed_engine_details_checked">
+        2400 RPM\n
+        500-700 RPM\n
+        2400 RPM\n
+        160 BHP\n
+        2065-2165 RPM
+    </string>
+
+    <string name="c172r_vspeed_takeoff_details">
+         Normal climb-out\n
+        Short-field, 10° flaps
+    </string>
+    <string name="c172r_vspeed_takeoff_details_checked">
+        80 KIAS\n
+        57 KIAS
+    </string>
+
+    <string name="c172r_vspeed_climb_details">
+         Normal - SL\n
+        Best rate of climb - SL\n
+        Best rate of climb - 10,000ft\n
+        Best angle of climb - SL\n
+        Best angle of climb - 10,000ft
+    </string>
+    <string name="c172r_vspeed_climb_details_checked">
+        80-100 KIAS\n
+        79 KIAS\n
+        71 KIAS\n
+        57 KIAS\n
+        65 KIAS
+    </string>
+
+    <string name="c172r_vspeed_landing_details">
+         Normal Approach - Flaps up\n
+        Normal Approach - Flaps 30°\n
+        Short-Field Approach\n
+        Go-Around - 10° flaps
+    </string>
+    <string name="c172r_vspeed_landing_details_checked">
+        70 KIAS\n
+        70-65-60 KIAS\n
+        70-65-54 KIAS\n
+        55 KIAS
+    </string>
+
+
+    <color name="dark_grey">#444444</color>
+    <color name="light_grey">#999999</color>
+
+    <color name="text">#FFFFFF</color>
 
     <string-array name="conversion_array">
         <item>Litres</item>

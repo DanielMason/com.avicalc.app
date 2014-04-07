@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/c172r_checklist_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".weight_and_balance">
+<TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="3"
+    >
+
+    <TableRow
+        android:id="@+id/table_titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/datum_title"
+            android:text="Datum"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginRight="15dp"
+            android:layout_column="0"/>
+
+        <TextView
+            android:id="@+id/weight_title"
+            android:text="Weight"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_column="1" />
+
+        <TextView
+            android:id="@+id/arm_title"
+            android:text="Arm"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_column="2" />
+        <TextView
+            android:id="@+id/moment_title"
+            android:text="Moment"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_column="2" />
+    </TableRow>
+
+    <!-- display this button in 2nd column via layout_column(zero based) -->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="B.E.W"
+            android:id="@+id/bew_title"    />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:background="@color/light_grey"
+            android:id="@+id/bew_weight"
+            android:paddingLeft="5dp"
+            android:layout_column="1"
+            android:text="0" />
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:background="@color/light_grey"
+            android:id="@+id/bew_arm"
+            android:layout_column="2"
+            android:text="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/bew_moment"    />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pilot"
+            android:id="@+id/pilot_title"    />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:background="@color/light_grey"
+            android:id="@+id/pilot_weight"
+            android:layout_column="1"
+            android:text="0" />
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:background="@color/light_grey"
+            android:id="@+id/pilot_arm"
+            android:layout_column="2"
+            android:text="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/pilot_moment"    />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Co-Pilot"
+            android:id="@+id/copilot_title"    />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:background="@color/light_grey"
+            android:id="@+id/copilot_weight"
+            android:layout_column="1"
+            android:text="0" />
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:background="@color/light_grey"
+            android:id="@+id/copilot_arm"
+            android:layout_column="2"
+            android:text="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/copilot_moment"    />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pax (aft)"
+            android:id="@+id/pax_title"    />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:background="@color/light_grey"
+            android:id="@+id/pax_weight"
+            android:layout_column="1"
+            android:text="0" />
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:background="@color/light_grey"
+            android:id="@+id/pax_arm"
+            android:layout_column="2"
+            android:text="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/pax_moment"    />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Fuel"
+            android:id="@+id/fuel_title"    />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:background="@color/light_grey"
+            android:id="@+id/fuel_weight"
+            android:layout_column="1"
+            android:text="0" />
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:background="@color/light_grey"
+            android:id="@+id/fuel_arm"
+            android:layout_column="2"
+            android:text="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/fuel_moment"    />
+    </TableRow>
+
+    <TableRow android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="#BDBDBD">
+        <TextView android:layout_span="2"
+            android:layout_height="1px"
+            android:layout_width="fill_parent"
+            android:text="">
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Totals"
+            android:id="@+id/total_title"    />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/total_weight"
+            android:layout_column="1" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/total_arm"
+            android:layout_column="2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/total_moment"  />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Current C of G"
+        android:id="@+id/title_cofg"
+        android:layout_span = "2"
+/>
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/total_cofg"
+        android:layout_span = "2"/>
+
+</TableRow>
+</TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C172R"
+        android:id="@+id/set172R"
+        android:onClick="setAircraft"
+        android:layout_column="1"
+        android:layout_alignParentBottom="true"  />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zero"
+        android:id="@+id/setZero"
+        android:onClick="setAircraft"
+        android:layout_column="1"
+        android:layout_toRightOf="@+id/set172R"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/calcTotals"
+        android:onClick="calcWeight"
+        android:layout_column="1"
+        android:layout_toRightOf="@+id/setZero"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="* set to 0 if not applicable"
+        android:id="@+id/star1"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/set172R"
+        android:layout_alignParentLeft="true" />
+
+
+</RelativeLayout>
