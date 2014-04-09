@@ -7,13 +7,124 @@
     tools:context=".MainActivity"
     android:focusable="false">
 
-    <TextView
+
+<TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="3"
+        >
+
+        <TableRow
+            android:id="@+id/arc_to_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Arc to Time"
+                android:id="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_span = "4"/>
+
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/table_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey"
+                android:id="@+id/long_deg"
+                android:paddingLeft="5dp"
+                android:layout_column="0"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/weight_title"
+                android:text="Deg"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey"
+                android:id="@+id/long_min"
+                android:paddingLeft="5dp"
+                android:layout_column="2"
+                android:text="0" />
+            <TextView
+                android:id="@+id/moment_title"
+                android:text="Min"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_column="2" />
+        </TableRow>
+
+
+    <TableRow
+        android:id="@+id/table_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Navigation Calculations (Coming soon)"
-        android:id="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
+        android:padding="5dip" >
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:background="@color/light_grey"
+            android:id="@+id/time_hrs"
+            android:paddingLeft="5dp"
+            android:layout_column="0"
+            android:text="0" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:background="@color/light_grey"
+            android:id="@+id/time_min"
+            android:paddingLeft="5dp"
+            android:layout_column="0"
+            android:text="0" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginRight="15dp"
+            android:background="@color/light_grey"
+            android:id="@+id/time_sec"
+            android:paddingLeft="5dp"
+            android:layout_column="2"
+            android:text="0" />
+        <TextView
+            android:id="@+id/time_titles"
+            android:text="H:M:S"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_column="2" />
+    </TableRow>
+
+    </TableLayout>
 
 </RelativeLayout>

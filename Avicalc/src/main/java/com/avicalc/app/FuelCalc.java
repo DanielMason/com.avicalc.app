@@ -91,6 +91,7 @@ public class FuelCalc extends Activity{
             @Override
             public void afterTextChanged(Editable editable) {
             }
+
         });
     }
     public void updateTotals() {
